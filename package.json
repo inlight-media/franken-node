@@ -1,0 +1,33 @@
+{
+  "name": "franken",
+  "version": "0.0.0",
+  "description": "NodeJS module for the Franken monitoring service.",
+  "homepage": "https://github.com/inlightmedia/franken-node",
+  "author": {
+    "name": "Inlight Media",
+    "url": "http://inlight.com.au"
+  },
+  "bugs": {
+    "url": "https://github.com/inlightmedia/franken-node/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/inlightmedia/franken-node.git"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/inlightmedia/franken-node/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "hatchet.io": "0.0.6"
+  }
+}
