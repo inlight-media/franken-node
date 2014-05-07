@@ -29,6 +29,10 @@ franken.start(); // begin sending heartbeat every 5 seconds
 
 ## Release History
 
+### 0.0.1
+
+- ADDED: Added ability to enable/disable transmission from config. Useful for local/test environments
+
 ### 0.0.0
 
 - ADDED: Initial Release

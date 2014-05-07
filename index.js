@@ -8,6 +8,9 @@ function Franken(auth, service) {
 
 	auth = auth || {};
 
+	// You can enable/disable franken transmission from auth config
+	var enabled = typeof auth.enabled != 'undefined' ? auth.enabled : true;
+
 	var config = {
 		hatchet: {
 			host: 'socket.franken.inlight.com.au',
@@ -21,7 +24,7 @@ function Franken(auth, service) {
 	var publisher = hatchet.publisher(config.hatchet.channel, config.hatchet.pub, { host: config.hatchet.host });
 
 	function start() {
-		if (timer) return;
+		if (timer || !enabled) return;
 		timer = setInterval(function() {
 			publisher.broadcast('heartbeat', { auth: auth, service: service, data: data, meta: { created: created, now: new Date() } });
 		}, heartbeatInterval);
