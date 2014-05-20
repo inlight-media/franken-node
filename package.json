@@ -1,6 +1,6 @@
 {
   "name": "franken",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NodeJS module for the Franken monitoring service.",
   "homepage": "https://github.com/inlight-media/franken-node",
   "author": {
